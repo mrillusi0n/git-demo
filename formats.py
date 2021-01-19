@@ -9,3 +9,9 @@ def to_lower(text):
 
 def to_toggle(text):
 	return text.swapcase()
+
+def to_backwards(text):
+    return text[::-1]
+
+if __name__ == '__main__':
+    print(to_backwards('words'))

@@ -3,7 +3,7 @@ from formats import to_lower, to_upper, to_toggle
 FORMATTING = {
 	'caps': to_upper,
 	'lower': to_lower,
-	'toggle'; to_toggle,
+	'toggle': to_toggle,
 }
 
 def main():
@@ -12,7 +12,8 @@ def main():
 
 	func = FORMATTING[format_name]
 
-	func(text)
+	result = func(text)
+	print(result)
 
 
 if __name__ == "__main__":
